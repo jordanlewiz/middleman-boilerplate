@@ -1,31 +1,4 @@
 // Header Typography
 header{
-  nav{
-    ul{
-      li{
-        font-family: $font-medium;
-        font-size: 14px;
-        line-height: 20px;
-        text-transform: uppercase;
-        a{
-          color: $nav-grey;
-          &:hover{
-            text-decoration: none;
-            color: lighten($nav-grey, 10%);
-          }
-        }
-        
-        &.home a{
-          color: lighten($nav-grey, 25%);
-          font-family: $font-regular;
-          &:hover{
-            color: lighten($nav-grey, 10%);
-          }
-        }
-        &.active a{
-          color: $nav-highlight;
-        }
-      }
-    }
-  }
+
 }
