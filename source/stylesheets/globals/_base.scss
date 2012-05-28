@@ -1,0 +1,21 @@
+// Globals 
+@import "vendor/bourbon/bourbon";
+@import "globals/variables";
+@import "globals/bootstrap";
+@import "globals/mixins";
+@import "globals/typography";
+@import "globals/buttons";
+
+
+// Structure
+@import "structure/root";
+@import "structure/header";
+@import "structure/content";
+@import "structure/footer";
+
+// Pages
+@import "pages/home";
+
+
+// Responsive
+@import "responsive/large";

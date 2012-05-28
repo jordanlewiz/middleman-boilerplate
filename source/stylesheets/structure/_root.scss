@@ -1,0 +1,21 @@
+html{
+  height: 100%;
+  background: $background-bg;
+  body{
+    background: $background-bg;
+  }
+}
+
+
+.wrapper{
+  width: 100%;
+  display: block;
+  background: url(../images/common/bg-wrapper-tile.png) repeat-y center 0;
+  .outter-container{
+    max-width: 1280px;
+    min-width: 1000px;
+    margin: 0px auto;
+    display: block;
+    background: #fff;
+  }
+}

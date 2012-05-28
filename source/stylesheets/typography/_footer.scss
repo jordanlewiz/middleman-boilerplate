@@ -1,0 +1,33 @@
+// Footer typography
+footer{
+  h3{
+    color: $footer-colour;
+  }
+
+  a{
+    color: $footer-colour;
+    text-decoration: underline;
+    &:hover{
+      color: darken($footer-colour, 10%);
+    }
+  }
+
+  p{
+    color: $footer-colour;
+  }
+
+  .copyright{
+    padding-top: 30px;
+    p{
+      font-size: 12px;
+      color: darken($footer-colour, 10%); 
+    }
+
+    a{
+      color: darken($footer-colour, 10%);
+      &:hover{
+        color: $footer-colour;
+      }
+    }
+  }
+}

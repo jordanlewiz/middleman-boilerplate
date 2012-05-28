@@ -1,0 +1,17 @@
+.sub-nav{
+  background: $subnav-bg;
+  nav{
+    @include nav-list;
+    ul{
+      li{
+        margin-left: 70px;
+        &.first{
+          margin-left: 0px;
+        }
+        &.active a{
+          background: url(../images/common/subnav-active.png) no-repeat center bottom;
+        }
+      }
+    }
+  }
+}

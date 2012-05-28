@@ -1,0 +1,27 @@
+// Homepage Typography
+body.homepage{
+  header.main{
+    nav{
+      ul{
+        li{
+          color: $highlight-colour;
+          &.active{
+            color: $highlight-colour;
+            a{
+              color: $highlight-colour;
+              &:hover{
+                color: $highlight-colour;
+              }
+            }
+          }
+          a{
+            color: $highlight-colour;
+            &:hover{
+              color: lighten($highlight-colour, 20%);
+            }
+          }
+        }
+      }
+    }
+  }
+}

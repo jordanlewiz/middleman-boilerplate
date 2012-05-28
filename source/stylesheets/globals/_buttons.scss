@@ -1,0 +1,11 @@
+.btn{
+  background: $header-colour-bright;
+  padding: 5px 10px;
+  @include border-radius(3px);
+  color: #fff;
+  &:hover{
+    text-decoration: none;
+    color: #fff;
+    background: lighten($header-colour-bright, 3%);
+  }
+}
