@@ -1,0 +1,6 @@
+body.error{
+	.content{
+		padding-top: 100px;
+		@include min-height(300px);
+	}
+}
