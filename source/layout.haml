@@ -11,8 +11,6 @@
     %meta{ :name => "robots", :content => "index, follow" }/
     %meta{ :name => "keywords", :content => "" }/
     %meta{ :name => "viewport", :content => "width=device-width, maximum-scale=1.0" }/
-    = favicon_tag "/images/common/favicon.ico"
-
     = stylesheet_link_tag "screen.css"
 
     %title= h(content_for?(:title) ? yield_content(:title) : "Title name here")
