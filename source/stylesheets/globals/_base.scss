@@ -6,7 +6,6 @@
 @import "globals/typography";
 @import "globals/buttons";
 
-
 // Structure
 @import "structure/root";
 @import "structure/header";
@@ -16,6 +15,8 @@
 // Pages
 @import "pages/home";
 
-
 // Responsive
 @import "responsive/large";
+
+// Crossbrowser
+@import "globals/ie6";
