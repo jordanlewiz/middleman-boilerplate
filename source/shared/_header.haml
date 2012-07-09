@@ -3,3 +3,10 @@
     .row
       .span12
         Header
+     .row
+     		.span6
+          .nav
+            %ul
+              = navigation_item "Home", root_path, "first"
+              = navigation_item "Google", "http://www.google.com"
+              = navigation_item "Bing", "www.bing.com", "last"

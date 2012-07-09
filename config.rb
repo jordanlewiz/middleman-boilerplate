@@ -59,7 +59,7 @@ helpers do
     "active" if (path == request_path) || (path != "/" && request_path =~ /^#{path}/i)
   end
 
-  def navigation_item(label, path, optional_class)
+  def navigation_item(label, path, optional_class = nil)
     content_tag(:li, link_to(label, path), :class => "#{navigation_class_for_path(path)} #{optional_class if optional_class}")
   end
 
