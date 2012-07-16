@@ -13,7 +13,7 @@
     %meta{ :name => "viewport", :content => "width=device-width, maximum-scale=1.0" }/
     = stylesheet_link_tag "screen.css"
 
-    %title= h(content_for?(:title) ? yield_content(:title) : "Title name here")
+    %title= h(content_for?(:title) ? yield_content(:title) + "Site name" : "Title name here")
 
     = javascript_include_tag "vendor/modernizr-2.5.3.min"
     = javascript_include_tag "http://www.google.com/jsapi"
