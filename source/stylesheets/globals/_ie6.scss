@@ -1,9 +1,9 @@
-.ie6{
+.lt-ie7{
   .chromeframe { 
     width: 100%;
     background: red; 
     padding: 20px 0px;
-    position: absolute;
+    position: relative;
     z-index: 300;
     p{
       color: #fff;
