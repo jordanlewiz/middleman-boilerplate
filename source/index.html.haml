@@ -5,51 +5,11 @@ title: Homepage
 .container
   .page-header
     %h2 
-      We're a forward-thinking networking
-      %br
-      organisation where great things happen.
-      %br
-      %strong 
-        Make a difference.
-        %span= link_to("Join us", membership_path("general")) + "."
+      Heavy Metal Home
       
 
-%section.intro
+%section
   .container
-    .inner
-      .row-fluid
-        .span8
-          %p
-            Innovation Bay is a not-for-profit networking group bringing together extraordinary people who are passionate about innovation, entrepreneurship and technology.
-          %p
-            Our members are leaders who want to make a difference to their companies and the markets they operate in. They engage in dialogue and share ideas at our exclusive angel dinners and speaker forums.
-          %p
-            So far, we've helped Australian entrepreneurs raise over 
-            %strong $10 million
-            in seed investments and we're on the look out for more ideas and innovations outside the imaginable.
-
-        .span4
-          %h4 Become a Member
-          %p Join the Innovation Bay community
-
-          %h4 Next Speaker Breakfast
-          = "No upcoming speaker breakfasts." if @speaker_breakfasts.empty?
-          - @speaker_breakfasts.find(1) do |event|
-            = partial("shared/home/event", :object => event)
-
-          %h4 Next Focus Dinner
-          = "No upcoming focus dinners." if @focus_dinners.empty?
-          - @focus_dinners.find(1) do |event|
-            = partial("shared/home/event", :object => event)
-
-          %h4 Next Angel Dinner
-          = "No upcoming angel dinners." if @angel_dinners.empty?
-          - @angel_dinners.find(1) do |event|
-            = partial("shared/home/event", :object => event)
-
-.container
-  %section.stories
     .row
       .span12
-        %h3 Angel Dinner Success Stories
-    = partial("shared/success-stories")
+        content here

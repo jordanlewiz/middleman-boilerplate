@@ -3,19 +3,11 @@
 		.row
 			.span4
 				.logo
-					%h1= link_to "Innovation Bay", root_app_path			
-			%nav
-				.span2
+					%h1= link_to "Logo", root_app_path			
+			.span8
+				%nav
 					%ul
-						= navigation_item "How It Works", how_it_works_path, "first"
-						= navigation_item "Member Events", events_path
-				.span2
-					%ul
-						= navigation_item "Angels", angels_path
-						= navigation_item "Entrepreneurs", entrepreneurs_path
-				.span2
-					%ul.single
-						= navigation_item "Membership", membership_path("")
-				.span2
-					%ul.single
-						= navigation_item "BayWatch Blog", blog_path
+						= navigation_item "Link item 1", "#", "first"
+						= navigation_item "Link item 2", "#"
+						= navigation_item "Link item 3", "#"
+						= navigation_item "Link item 4", "#", "last"

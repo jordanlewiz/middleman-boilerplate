@@ -5,18 +5,18 @@ header.main{
 			li{
 				line-height: 15px;
 				a{
-					color: $font-colour-nav;
+					//color: $font-colour-nav;
 					font-size: 14px;
 					line-height: 15px;
 					font-weight: bold;
 					&:hover{
-						color: $font-colour-nav-alt;
+						color: orange;
 						text-decoration: none;
 					}
 				}
 				&.active{
 					a{
-						color: $font-colour-nav-alt;
+						color: red;
 					}
 				}
 			}
