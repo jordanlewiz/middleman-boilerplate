@@ -35,3 +35,7 @@
     background-position: $new_x $new_y;
   }
 }
+
+@mixin divider-top{
+  border-top: $highlight 10px solid;
+}

@@ -1,4 +1,25 @@
 // Header Typography
-header{
-
+header.main{
+	nav{
+		ul{
+			li{
+				line-height: 15px;
+				a{
+					color: $font-colour-nav;
+					font-size: 14px;
+					line-height: 15px;
+					font-weight: bold;
+					&:hover{
+						color: $font-colour-nav-alt;
+						text-decoration: none;
+					}
+				}
+				&.active{
+					a{
+						color: $font-colour-nav-alt;
+					}
+				}
+			}
+		}
+	}
 }

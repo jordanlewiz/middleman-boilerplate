@@ -1,7 +1,10 @@
-// Globals 
+// Vendor
 @import "vendor/bourbon/bourbon";
+@import "vendor/twitter/bootstrap";
+@import "vendor/twitter/bootstrap-responsive";
+
+// Globals 
 @import "globals/variables";
-@import "globals/bootstrap";
 @import "globals/mixins";
 @import "globals/typography";
 @import "globals/buttons";
@@ -11,12 +14,25 @@
 @import "structure/header";
 @import "structure/content";
 @import "structure/footer";
+@import "structure/boxes";
+
 
 // Pages
 @import "pages/home";
+@import "pages/how-it-works";
+@import "pages/member-events";
+@import "pages/angels";
+@import "pages/entrepreneurs";
+@import "pages/membership";
+@import "pages/blog";
+@import "pages/who-we-are";
+@import "pages/sponsors";
+@import "pages/small-print";
 @import "pages/error";
 
 // Responsive
+@import "responsive/mobile";
+@import "responsive/tablet";
 @import "responsive/large";
 
 // Crossbrowser

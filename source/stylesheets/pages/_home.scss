@@ -1,5 +1,37 @@
-body.homepage{
-  .banner{
-    background: url(../images/homepage/header-bg-homepage.jpg) no-repeat center 0;
-  }
+body.index{
+	section{
+		&.intro{
+			background: $highlight;
+			border-left: $bg-colour 20px solid;
+			border-right: $bg-colour 20px solid;
+			padding: 20px;
+		}
+	}
+}
+
+
+@media (max-width: 1040px) and (min-width: 979px){
+	body.index{
+		section{
+			&.intro{
+				//background: yellow;
+				.container{
+					width: auto;
+				}
+			}
+		}
+	}
+}
+
+@media (max-width: 1289px) and (min-width: 1249px){
+	body.index{
+		section{
+			&.intro{
+				//background: orange;
+				.container{
+					width: auto;
+				}
+			}
+		}
+	}
 }

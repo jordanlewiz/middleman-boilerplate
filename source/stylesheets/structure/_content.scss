@@ -1,3 +1,33 @@
 .content{
-
+	min-height: 400px;
+	padding: 40px 0;
+	.page-header{
+		border: none;
+		margin: 0;
+		padding: 0;
+		h2{
+			margin: 0;
+		}
+	}
+	section{
+		margin: 20px 0;
+		padding: 20px 0 40px 0;
+	  ul{
+	  	list-style: none;
+	  	float: left;
+	  	width: 100%;
+	  	margin-left: 0;
+	  	li{
+      	float: left;
+      	clear: both;
+    	}
+    }
+	}
+	.divider{
+  	@include divider-top;
+  	padding-top: 40px;
+  	&.no-padding{
+  		padding-top: 0;
+  	}
+  }
 }

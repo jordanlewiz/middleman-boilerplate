@@ -1,1 +1,28 @@
 // Variables
+
+// Values
+$page-border-width: 20px;
+
+// Colors
+$highlight: #00cc99;
+$bg-colour: #ebebeb;
+
+// Font Colours
+$font-colour-nav: #fff;
+$font-colour-nav-alt: $highlight;
+
+$font-colour-heading: #000;
+$font-colour-heading-alt: $highlight;
+
+// Fonts
+$default-font: 'Quicksand', Arial, "Helvetica Neue", Helvetica, sans-serif;
+
+// Arrays
+$speakers: michael-malone, adrian-mackenzie, daniel-petre, michael-quigley, kim-williams, brett-chenoweth, david-kirk, deena-shiff;
+
+
+// Width 
+$container-width-default: 940px;
+$container-width-large: 1170px;
+$container-width-tablet: 724px;
+$container-width-mobile: auto;

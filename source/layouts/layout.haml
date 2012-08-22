@@ -14,7 +14,7 @@
     %meta{ :name => "viewport", :content => "width=device-width, maximum-scale=1.0" }/
     = stylesheet_link_tag "screen.css"
 
-    %title= h(content_for?(:title) ? yield_content(:title) + "Site name" : "Title name here")
+    %title= data.page.title || "Innovation Bay"
 
     = javascript_include_tag "vendor/modernizr-2.5.3.min"
     = javascript_include_tag "http://www.google.com/jsapi"
@@ -22,23 +22,20 @@
     :javascript
       google.load("webfont", "1.0.19");
 
-    %script{ :type => "text/javascript"} 
-      =# "WebFont.load({ custom: {families: ['DINLightRegular', 'DINMediumRegular', 'DINBlackRegular'], urls: ['" + asset_url('stylesheets/fonts.css') + "']}});"
+    %script{ :type => "text/javascript"}
+      = "WebFont.load({ google: { families: [ 'Quicksand:300,400,700:latin' ] }});"
 
 
-  %body{:class => content_for?(:body_class) ? yield_content(:body_class) : ""}
+  %body{ :class => page_classes }
     <!-- Prompt IE 6 users to install Chrome Frame. -->
     <!--[if lt IE 7]><div class=chromeframe><div class="container"><p>Your browser is <em>very old!</em> <a href="http://browsehappy.com/">Upgrade to a different browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to experience this site.</p></div></div><![endif]-->
-    .wrapper
-      .outter-container
-        = partial "shared/header"
-        - if is_home?
-          - # Do something here
-  
-        .content
-          = yield
 
-        = partial "shared/footer"
+    = partial "shared/header"
+    
+    .content
+      = yield
 
-    = javascript_include_tag "https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"
-    = partial("shared/google-analytics", :locals => { :id => "UA-xxxx-xxxx-xx" })
+    = partial "shared/footer"
+
+    = javascript_include_tag "application"
+    = partial("shared/google-analytics", :locals => { :id => "UA-34160153-1" })
