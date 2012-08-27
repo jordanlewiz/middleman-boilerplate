@@ -6,4 +6,4 @@
 				= g.name
 			%ul
 				- pages_for_group(g.name).each_with_index do |p, i|
-					%li= link_to p.title, p.path
+					= navigation_item p.title, p.path

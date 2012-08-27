@@ -1,3 +1,11 @@
-.content{
-	
+.nav-list{
+	border: red 1px solid;
+	li.active{
+		> a{
+			background-color: #08c;
+			color: #fff;
+			display: block;
+			width: 100%
+		}
+	}
 }
