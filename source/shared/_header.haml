@@ -1,12 +1,8 @@
 %header.main
-  .container
-    .row
-      .span12
-        Header
-     .row
-     		.span6
-          .nav
-            %ul
-              = navigation_item "Home", root_path, "first"
-              = navigation_item "Google", "http://www.google.com"
-              = navigation_item "Bing", "www.bing.com", "last"
+	.container
+		.navbar
+			.navbar-inner
+				= link_to "Company Name", root_app_path, :class => "brand"
+				%ul.nav
+					- data.nav.each do |g|
+						= navigation_item g.name, "#"

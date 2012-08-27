@@ -1,4 +1,3 @@
-middleman-boilerplate
-=====================
+# Heavy Metal Group v2.0
 
-A Middleman App, with H5BP + TBS integrated and ready to go.
+...
