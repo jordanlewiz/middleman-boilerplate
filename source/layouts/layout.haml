@@ -14,7 +14,7 @@
     %meta{ :name => "viewport", :content => "width=device-width, maximum-scale=1.0" }/
     = stylesheet_link_tag "screen.css"
 
-    %title= data.page.title || "Innovation Bay"
+    %title= data.page.title || "Company Name"
 
     = javascript_include_tag "vendor/modernizr-2.5.3.min"
     = javascript_include_tag "http://www.google.com/jsapi"
@@ -32,10 +32,16 @@
 
     = partial "shared/header"
     
-    .content
-      = yield
+    .container
+      .row
+        = partial("shared/breadcrumbs")
+      .row
+        .span3
+          = partial("shared/nav")
+        .span9
+          = yield
 
     = partial "shared/footer"
 
     = javascript_include_tag "application"
-    = partial("shared/google-analytics", :locals => { :id => "UA-34160153-1" })
+    = partial("shared/google-analytics", :locals => { :id => "UA-XXXXXXXX-X" })

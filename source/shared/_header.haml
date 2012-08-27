@@ -1,13 +1,8 @@
 %header.main
 	.container
-		.row
-			.span4
-				.logo
-					%h1= link_to "Logo", root_app_path			
-			.span8
-				%nav
-					%ul
-						= navigation_item "Link item 1", "#", "first"
-						= navigation_item "Link item 2", "#"
-						= navigation_item "Link item 3", "#"
-						= navigation_item "Link item 4", "#", "last"
+		.navbar
+			.navbar-inner
+				= link_to "Company Name", root_app_path, :class => "brand"
+				%ul.nav
+					- data.nav.each do |g|
+						= navigation_item g.name, "#"
