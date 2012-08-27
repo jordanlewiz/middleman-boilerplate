@@ -1,0 +1,35 @@
+---
+title: Past Speaker @person.name
+---
+
+.container
+	.page-header
+		%h2 
+			We hold regular networking dinners,
+			%br
+			forums and events for our community.
+			%br
+			%strong 
+				Meet past speaker,
+				%span= "#{@person.name}."
+
+	%section.main.divider
+		.row
+			.span6
+				.bio
+					:markdown
+						#{@person.bio}
+
+				%ul
+					%li= link_to "#{@person.first_name} on LinkedIn", @person.linked_in, :target => "_blank" if @person.linked_in
+					%li= link_to "#{@person.first_name} on Twitter", @person.twitter, :target => "_blank" if @person.twitter
+					%li= link_to "#{@person.first_name}'s' Pitch Video", @person.video, :target => "_blank" if @person.video
+
+			.span5.offset1
+				= image_tag "speakers/#{@person.slug}.jpg", :alt => @person.name
+
+	%section.related-info
+		.row
+			.span12
+				%h3 Other Past Speakers		
+		= partial("shared/past-speakers")

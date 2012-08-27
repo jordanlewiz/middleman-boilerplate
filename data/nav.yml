@@ -1,0 +1,8 @@
+-
+  name: "Cars"
+  desc: "Brands of cars"
+  directory: "cars"
+-
+  name: "Trucks"
+  desc: "Brands of trucks"
+  directory: "trucks"

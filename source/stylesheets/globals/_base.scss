@@ -1,7 +1,10 @@
-// Globals 
+// Vendor
 @import "vendor/bourbon/bourbon";
+@import "vendor/twitter/bootstrap";
+@import "vendor/twitter/bootstrap-responsive";
+
+// Globals 
 @import "globals/variables";
-@import "globals/bootstrap";
 @import "globals/mixins";
 @import "globals/typography";
 @import "globals/buttons";
@@ -12,11 +15,14 @@
 @import "structure/content";
 @import "structure/footer";
 
+
 // Pages
 @import "pages/home";
-@import "pages/error";
+
 
 // Responsive
+@import "responsive/mobile";
+@import "responsive/tablet";
 @import "responsive/large";
 
 // Crossbrowser
