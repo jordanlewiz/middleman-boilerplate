@@ -1,3 +1,0 @@
-# Heavy Metal Group v2.0
-
-...
