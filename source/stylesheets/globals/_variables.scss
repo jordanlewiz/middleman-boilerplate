@@ -1,4 +1,26 @@
-// Variables
+// Globals 'Variables'
+
+// Values
+$page-border-width: 20px;
+
+// Colors
+$highlight: #00cc99;
+$highlight-hover: darken($highlight, 5%);
+$bg-colour: #ebebeb;
+
+// Font Colours
+$font-colour-nav: #fff;
+$font-colour-nav-alt: $highlight;
+
+$font-colour-heading: #000;
+$font-colour-heading-alt: $highlight;
+
+$font-colour-dark: #000;
+$font-colour-dark-hover: $highlight;
 
 // Fonts
-$default-font: Arial, "Helvetica Neue", Helvetica, sans-serif;
+$default-font: 'Custom Font Family', Arial, "Helvetica Neue", Helvetica, sans-serif;
+$fallback-font: Arial, "Helvetica Neue", Helvetica, sans-serif;
+
+// Arrays
+// e.g. $speakers: michael-malone, adrian-mackenzie, daniel-petre, michael-quigley, kim-williams, brett-chenoweth, david-kirk, deena-shiff;

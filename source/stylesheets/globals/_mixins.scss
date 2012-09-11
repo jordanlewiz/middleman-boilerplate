@@ -1,3 +1,5 @@
+// Globals 'Mixins'
+
 @mixin image-replacement{
   & { display: block; border: 0; text-indent: -999em; overflow: hidden; background-color: transparent; background-repeat: no-repeat; text-align: left; direction: ltr; *line-height: 0; }
   & br { display: none; }
@@ -34,8 +36,4 @@
   &:hover{
     background-position: $new_x $new_y;
   }
-}
-
-@mixin divider-top{
-  border-top: $highlight 10px solid;
 }

@@ -1,0 +1,21 @@
+---
+title: @person.name Bio
+---
+
+.container
+	.page-header
+		%h2= "#{@person.name}."
+
+	%section.main.divider
+		.row
+			.span6
+				.bio
+					:markdown
+						#{@person.bio}
+
+				%ul
+					%li= link_to "#{@person.first_name} on LinkedIn", @person.linked_in, :target => "_blank" if @person.linked_in
+					%li= link_to "#{@person.first_name} on Twitter", @person.twitter, :target => "_blank" if @person.twitter
+
+			.span5.offset1
+				= image_tag "speakers/#{@person.slug}.jpg", :alt => @person.name

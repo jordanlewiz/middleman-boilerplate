@@ -1,3 +1,5 @@
+// Globals 'Base'
+
 // Vendor
 @import "vendor/bourbon/bourbon";
 @import "vendor/twitter/bootstrap";
@@ -6,24 +8,35 @@
 // Globals 
 @import "globals/variables";
 @import "globals/mixins";
-@import "globals/typography";
 @import "globals/buttons";
 
-// Structure
-@import "structure/root";
-@import "structure/header";
-@import "structure/content";
-@import "structure/footer";
-
+// Layouts
+@import "layouts/application";
 
 // Pages
 @import "pages/home";
+@import "pages/error";
+
+// Typography
+@import "typography/fonts";
+@import "typography/defaults";
+@import "typography/application";
+@import "typography/pages";
 
 
-// Responsive
-@import "responsive/mobile";
-@import "responsive/tablet";
-@import "responsive/large";
+// Responsive - Mobile
+@media (max-width: 767px) {
+  @import "responsive/mobile/structure";
+  @import "responsive/mobile/pages";
+  @import "responsive/mobile/typography";
+}
+
+// Responsive - Tablet
+@media (max-width: 979px) and (min-width: 768px){
+  @import "responsive/tablet/structure";
+  @import "responsive/tablet/pages";
+  @import "responsive/tablet/typography";
+}
 
 // Crossbrowser
-@import "globals/ie6";
+@import "crossbrowser/ie6";
