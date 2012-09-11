@@ -1,4 +1,4 @@
-speaker_breakfast:
+category1:
   -
     date: 2012-11-15
     start_time: 2012-11-15 @0745
@@ -45,7 +45,7 @@ speaker_breakfast:
     description: |-
       Guest Speaker TBC      
 
-focus_dinner:
+category2:
   -
     date: 2012-09-11
     start_time: 2012-09-11 @1830
@@ -91,7 +91,7 @@ focus_dinner:
       w/ Kate Vale, Spotify  
     description: |-    
 
-angel_dinner:
+category3:
   -
     date: 2012-11-20
     start_time: 2012-11-20 @1830
