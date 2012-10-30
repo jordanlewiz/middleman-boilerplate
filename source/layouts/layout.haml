@@ -16,20 +16,23 @@
 
     %title= data.page.title || "Company Name"
 
-    = javascript_include_tag "vendor/modernizr-2.5.3.min"
+   
+    = javascript_include_tag "vendor/modernizr"
     = javascript_include_tag "http://www.google.com/jsapi"
       
     :javascript
       google.load("webfont", "1.0.19");
 
-    %script{ :type => "text/javascript"}
-      = "WebFont.load({ google: { families: [ 'Quicksand:300,400,700:latin' ] }});"
+    :javascript
+      WebFont.load({
+        google: { families: [ 'Titillium+Web:200,400:latin' ] },
+        custom: {families: ['BestFutureV'], urls: ['stylesheets/fonts.css']}
+      });
+
 
 
   %body{ :class => page_classes }
-    <!-- Prompt IE 6 users to install Chrome Frame. -->
-    <!--[if lt IE 7]><div class=chromeframe><div class="container"><p>Your browser is <em>very old!</em> <a href="http://browsehappy.com/">Upgrade to a different browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to experience this site.</p></div></div><![endif]-->
-
+    = partial "shared/browser-warning"
     = partial "shared/header"
     
     .container
