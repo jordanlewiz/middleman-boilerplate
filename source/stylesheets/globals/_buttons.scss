@@ -9,8 +9,7 @@
   cursor: pointer;
   padding: 5px 10px;
   font-size: 13px;
-  font-family: $default-font-bold;
-  font-weight: normal;
+  font-weight: bold;
   color: #fff;
   @include border-radius(3px);
   &:hover{
