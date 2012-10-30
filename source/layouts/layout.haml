@@ -16,14 +16,19 @@
 
     %title= data.page.title || "Company Name"
 
-    = javascript_include_tag "vendor/modernizr-2.5.3.min"
+   
+    = javascript_include_tag "vendor/modernizr"
     = javascript_include_tag "http://www.google.com/jsapi"
       
     :javascript
       google.load("webfont", "1.0.19");
 
-    %script{ :type => "text/javascript"}
-      = "WebFont.load({ google: { families: [ 'Quicksand:300,400,700:latin' ] }});"
+    :javascript
+      WebFont.load({
+        google: { families: [ 'Titillium+Web:200,400:latin' ] },
+        custom: {families: ['BestFutureV'], urls: ['stylesheets/fonts.css']}
+      });
+
 
 
   %body{ :class => page_classes }
