@@ -11,20 +11,6 @@
   &:after { clear: both; }
 }
 
-
-@mixin nav-list{  
-  @include clear-fix;
-  display: block;
-  ul{
-    float: left;
-    list-style: none;
-    margin: 0px;
-    li{
-      float: left;
-    }
-  }
-}
-
 @mixin min-height($val){
   height: auto !important;
   height: $val;
@@ -37,7 +23,6 @@
     background-position: $new_x $new_y;
   }
 }
-
 
 // Easy retina-ready images using SCSS 
 // http://37signals.com/svn/posts/3271-easy-retina-ready-images-using-scss

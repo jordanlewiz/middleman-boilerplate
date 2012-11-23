@@ -1,9 +1,0 @@
-%ul.nav.nav-list
-	- data.nav.each do |g|
-		%li{ :class => navigation_class_for_path("/#{g.directory}") }
-			%a{:href => "/#{g.directory}"}
-				%i.icon-chevron-right
-				= g.name
-			%ul
-				- pages_for_group(g.name).each_with_index do |p, i|
-					= navigation_item p.title, p.path
