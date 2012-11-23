@@ -1,0 +1,9 @@
+// 'Application' Layout
+
+html{
+  body{
+    @import "structure/application/header";
+    @import "structure/application/content";
+    @import "structure/application/footer";
+  }
+}
