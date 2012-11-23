@@ -3,15 +3,7 @@ var Application = Application || {};
 Application.Core = function(){
 	"use strict";
 
-	// Twitter Feed
-	$("footer .news .tweet").tweet({
-		username: "innovationbay",
-		join_text: "auto",
-		avatar_size: 0,
-		count: 3,
-		loading_text: "loading tweets..."
-	});
-
+	// Code goes here
 
   return true;
 };
