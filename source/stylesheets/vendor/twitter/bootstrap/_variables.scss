@@ -1,4 +1,4 @@
-/* Copy of Partial: twitter/bootstrap/_variables.scss */
+/* Partial: twitter/bootstrap/_variables.scss */
 //
 // Variables
 // --------------------------------------------------
@@ -44,14 +44,14 @@ $linkColorHover:        darken($linkColor, 15%) !default;
 
 // Typography
 // -------------------------
-$sansFontFamily:        Arial, "Helvetica Neue", Helvetica, sans-serif !default;
+$sansFontFamily:        "Helvetica Neue", Helvetica, Arial, sans-serif !default;
 $serifFontFamily:       Georgia, "Times New Roman", Times, serif !default;
 $monoFontFamily:        Monaco, Menlo, Consolas, "Courier New", monospace !default;
 
 $baseFontSize:          14px !default;
-$baseFontFamily:        AkzidenzGrotesk, $sansFontFamily !default;
+$baseFontFamily:        $sansFontFamily !default;
 $baseLineHeight:        20px !default;
-$altFontFamily:         BestFutureV, $serifFontFamily !default;
+$altFontFamily:         $serifFontFamily !default;
 
 $headingsFontFamily:    inherit !default; // empty to use BS default, @baseFontFamily
 $headingsFontWeight:    bold !default;    // instead of browser default, bold
@@ -150,8 +150,8 @@ $zindexModal:           1050 !default;
 
 // Sprite icons path
 // -------------------------
-$iconSpritePath:        "images/vendor/twitter/bootstrap/glyphicons-halflings.png" !default;
-$iconWhiteSpritePath:   "images/vendor/twitter/bootstrap/glyphicons-halflings-white.png" !default;
+$iconSpritePath:        "twitter/bootstrap/glyphicons-halflings.png" !default;
+$iconWhiteSpritePath:   "twitter/bootstrap/glyphicons-halflings-white.png" !default;
 
 
 // Input placeholder text color

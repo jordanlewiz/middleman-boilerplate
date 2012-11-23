@@ -2,4 +2,38 @@
 // Application Stylesheet
 //
 
-@import "globals/base";
+// Mixins 
+@import "vendor/bourbon/bourbon";
+@import "globals/mixins";
+
+// Framework
+@import "globals/variables";
+@import "vendor/twitter/bootstrap";
+
+// Custom 
+@import "typography/application";
+
+// Structure
+@import "structure/application";
+
+// Pages
+@import "pages/home";
+@import "pages/error";
+
+// Responsive
+
+// Responsive - Mobile
+@media (max-width: 767px) {
+  @import "responsive/mobile/structure";
+  @import "responsive/mobile/pages";
+  @import "responsive/mobile/typography";
+}
+
+// Responsive - Tablet
+@media (max-width: 979px) and (min-width: 768px){
+  @import "responsive/tablet/structure";
+  @import "responsive/tablet/pages";
+  @import "responsive/tablet/typography";
+}
+// Crossbrowser
+@import "crossbrowser/ie6";
