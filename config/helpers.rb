@@ -39,4 +39,12 @@ module ApplicationHelpers
     string.downcase.strip.gsub(' ', '-').gsub(/[^\w-]/, '')
   end
 
+  # render Markdown. Strip wrapper <p> if wanted
+  def md(key, options={})
+    @markdown_renderer ||= Redcarpet::Markdown.new(Redcarpet::Render::HTML)
+    html = @markdown_renderer.render(key)
+    html = html.gsub(/^\s*<p\s*>|<\s*\/\s*p\s*>\s*$/i, '') if options[:no_p]
+    html
+  end
+
 end
