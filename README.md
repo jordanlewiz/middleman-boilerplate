@@ -5,3 +5,17 @@ Middleman 3.0 Boilerplate
 - [SASS](http://sass-lang.com/)  
 - [Bourbon](http://thoughtbot.com/bourbon/) SASS mixins  
 - and more  
+
+
+
+
+##Models
+
+####Slug
+
+`hotel.slug = hotel.name.downcase.parameterize`
+instead of 
+`hotel.slug  = yaml[:slug]  || hotel.name.downcase.strip.gsub(' ', '-').gsub(/[^\w-]/, '')`
+
+
+
