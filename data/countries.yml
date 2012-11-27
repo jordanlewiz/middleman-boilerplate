@@ -1,0 +1,20 @@
+# Optional Attributes
+# ------------------------------------------------------------------------------
+# slug:           ( for Custom slug )
+# wrapper_class   ( i.e. 'long-title') 
+# ribbon          ( i.e. 'complimentary-night-accepted' )
+# ------------------------------------------------------------------------------
+
+-
+  america:
+  
+-
+  australia:
+
+
+-
+  england:
+
+
+-
+  canada:

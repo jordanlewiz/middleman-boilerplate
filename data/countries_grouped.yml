@@ -1,0 +1,32 @@
+# Optional Attributes
+# ------------------------------------------------------------------------------
+# slug:           ( for Custom slug )
+# wrapper_class   ( i.e. 'long-title') 
+# ribbon          ( i.e. 'complimentary-night-accepted' )
+# ------------------------------------------------------------------------------
+
+america:
+  - 
+    name: New York
+    state: New York
+    population: 8244910
+  - 
+    name: Boston
+    state: Massachusetts
+    population: 625087
+  -
+    name: Los Angeles
+    state: California
+    population: 3819702
+  -
+    name: Houston
+    state: Texas
+    population: 2145146
+
+australia:
+
+
+england:
+
+
+canada:

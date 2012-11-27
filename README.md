@@ -16,6 +16,3 @@ Middleman 3.0 Boilerplate
 `hotel.slug = hotel.name.downcase.parameterize`
 instead of 
 `hotel.slug  = yaml[:slug]  || hotel.name.downcase.strip.gsub(' ', '-').gsub(/[^\w-]/, '')`
-
-
-
