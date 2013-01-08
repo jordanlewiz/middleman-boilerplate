@@ -7,6 +7,7 @@ Dir[File.join(File.dirname(__FILE__), 'models', '*.rb')].each{ |file| require fi
 # Helpers
 require 'config/routes'
 require 'config/helpers'
+require 'builder'
 
 helpers do
   include RouteHelpers
@@ -36,6 +37,11 @@ activate :automatic_image_sizes
 ##############################
 # Pages
 page "*", :layout => "application"
+
+
+##############################
+# Dynamically Generated Pages
+activate :directory_indexes  #Removes .html from file
 
 
 
