@@ -3,10 +3,18 @@
 Dir[File.join(File.dirname(__FILE__), 'models', '*.rb')].each{ |file| require file }
 #Navigation.load_all(data.navigation)
 
+activate :fjords do |config|
+  config.username = "jordan"
+  config.password = "jordan84"
+  #config.domain = "site.example.com"
+end
+
+
 ##############################
 # Helpers
 require 'config/routes'
 require 'config/helpers'
+require 'builder'
 
 helpers do
   include RouteHelpers
@@ -36,6 +44,11 @@ activate :automatic_image_sizes
 ##############################
 # Pages
 page "*", :layout => "application"
+
+
+##############################
+# Dynamically Generated Pages
+activate :directory_indexes  #Removes .html from file
 
 
 

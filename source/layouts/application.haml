@@ -25,11 +25,11 @@
 
 
   %body{ :class => page_classes }
-    = partial "shared/browser-warning"
+    = partial "shared/browser_warning"
     = partial "shared/header"
     #content-wrapper
       = yield
     = partial "shared/footer"
 
     = javascript_include_tag "application"
-    = partial("shared/google-analytics", :locals => { :id => "UA-XXXXXXXX-X" })
+    = partial("shared/google_analytics", :locals => { :id => "UA-XXXXXXXX-X" })

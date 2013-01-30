@@ -24,8 +24,8 @@ module ApplicationHelpers
   # Navigation Helpers
   #########################
   def navigation_class_for_path(path)
-    request_path = request.path.gsub(/index\.html(.*?)$/, "")
-    "active" if (path == request_path) || (path != "/" && request_path =~ /^#{path}/i)
+    request_path = "/#{request.path.gsub(/index\.html(.*?)$/, "")}"
+    "active" if (path == request_path) || (path != "/" && request_path =~ /^(\/)?#{path}/i)
   end
 
   def navigation_item(label, path, optional_class = nil)
@@ -39,4 +39,11 @@ module ApplicationHelpers
     string.downcase.strip.gsub(' ', '-').gsub(/[^\w-]/, '')
   end
 
+  # render Markdown. Strip wrapper <p> if wanted
+  def md(key, options={})
+    @markdown_renderer ||= Redcarpet::Markdown.new(Redcarpet::Render::HTML)
+    html = @markdown_renderer.render(key)
+    html = html.gsub(/^\s*<p\s*>|<\s*\/\s*p\s*>\s*$/i, '') if options[:no_p]
+    html
+  end
 end

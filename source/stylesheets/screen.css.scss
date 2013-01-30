@@ -36,4 +36,5 @@
   @import "responsive/tablet/typography";
 }
 // Crossbrowser
-@import "crossbrowser/ie6";
+@import "crossbrowser/lt-ie7";
+//@import "crossbrowser/lt-ie8";
