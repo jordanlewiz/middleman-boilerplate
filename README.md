@@ -3,7 +3,7 @@
 
 ## Intro
 
-This is a feature-packed [Middleman](http://middlemanapp.com/) template. Essentially it is an evolving collection or regularly used helpers, models, mixins, frameworks and examples to aid with rapid static site generation. 
+This is a feature-packed [Middleman](http://middlemanapp.com/) project template. Essentially it is an evolving collection or regularly used helpers, models, mixins, frameworks and examples to aid with rapid static site generation. 
 
 [Middleman](http://middlemanapp.com/) is a static site generator based on Sinatra. Providing dozens of templating languages (Haml, Sass, Compass, Slim, CoffeeScript, and more). Makes minification, compression, cache busting, Yaml data (and more) an easy part of your development cycle.
 
