@@ -3,14 +3,14 @@
 
 ## Intro
 
-This is a feature-packed [Middleman](http://middlemanapp.com/) template. Essentially it is an eloving collection or regularly used helpers, models, mixins, frameworks and examples to aid with the rapid static site generation. 
+This is a feature-packed [Middleman](http://middlemanapp.com/) template. Essentially it is an evolving collection or regularly used helpers, models, mixins, frameworks and examples to aid with rapid static site generation. 
 
 [Middleman](http://middlemanapp.com/) is a static site generator based on Sinatra. Providing dozens of templating languages (Haml, Sass, Compass, Slim, CoffeeScript, and more). Makes minification, compression, cache busting, Yaml data (and more) an easy part of your development cycle.
 
 
 ## Usage
 
-Download and install into ~/.middleman (you'll have to create this directory if it's not already there). You can then use it with the `--template` flag on `middleman init`. For example: `middleman init your-project --template=middleman-frameless`
+Download and install into ~/.middleman (you'll have to create this directory if it's not already there). You can then use it with the `--template` flag on `middleman init`. For example: `middleman init your-project --template=middleman-boilerplate`
 
 For more help follow [Middleman's project template instructions](http://middlemanapp.com/getting-started/welcome/).
 
@@ -24,3 +24,9 @@ For more help follow [Middleman's project template instructions](http://middlema
 - [Bourbon](http://thoughtbot.com/bourbon/) SASS mixins  
 - Markdown support
 - and more 
+
+
+
+## Whats missing?
+- Finish Model examples
+- Documentation  
