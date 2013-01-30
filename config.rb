@@ -3,6 +3,13 @@
 Dir[File.join(File.dirname(__FILE__), 'models', '*.rb')].each{ |file| require file }
 #Navigation.load_all(data.navigation)
 
+activate :fjords do |config|
+  config.username = "jordan"
+  config.password = "jordan84"
+  #config.domain = "site.example.com"
+end
+
+
 ##############################
 # Helpers
 require 'config/routes'

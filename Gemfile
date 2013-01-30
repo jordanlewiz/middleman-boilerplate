@@ -1,6 +1,7 @@
 source :rubygems
 
 gem "middleman", "~>3.0.6"
+gem "middleman-fjords"
 gem "bourbon"
 gem 'builder'
 gem 'redcarpet'
