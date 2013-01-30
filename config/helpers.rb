@@ -24,8 +24,8 @@ module ApplicationHelpers
   # Navigation Helpers
   #########################
   def navigation_class_for_path(path)
-    request_path = request.path.gsub(/index\.html(.*?)$/, "")
-    "active" if (path == request_path) || (path != "/" && request_path =~ /^#{path}/i)
+    request_path = "/#{request.path.gsub(/index\.html(.*?)$/, "")}"
+    "active" if (path == request_path) || (path != "/" && request_path =~ /^(\/)?#{path}/i)
   end
 
   def navigation_item(label, path, optional_class = nil)
