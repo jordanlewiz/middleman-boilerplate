@@ -4,8 +4,8 @@ Dir[File.join(File.dirname(__FILE__), 'models', '*.rb')].each{ |file| require fi
 #Navigation.load_all(data.navigation)
 
 activate :fjords do |config|
-  config.username = "jordan"
-  config.password = "jordan84"
+  #config.username = ""
+  #config.password = ""
   #config.domain = "site.example.com"
 end
 
