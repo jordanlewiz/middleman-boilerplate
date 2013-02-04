@@ -12,7 +12,7 @@ This is a feature-packed [Middleman](http://middlemanapp.com/) project template.
 
 Download and install into ~/.middleman (you'll have to create this directory if it's not already there). You can then use it with the `--template` flag on `middleman init`. For example: `middleman init your-project --template=middleman-boilerplate`
 
-For more help follow [Middleman's project template instructions](http://middlemanapp.com/getting-started/welcome/).
+For more help follow [Middleman's project template instructions](http://middlemanapp.com/getting-started/).
 
 ## Features
 - Middleman 3.0.6  
