@@ -1,8 +1,20 @@
 ##############################
-# Load data
+# Load Models
 Dir[File.join(File.dirname(__FILE__), 'models', '*.rb')].each{ |file| require file }
 #Navigation.load_all(data.navigation)
 
+##############################
+# Load Data
+Dir[File.join(File.dirname(__FILE__), 'data/projects', '*.yml')].each do |file|
+  puts "Loading Project - '#{file}'"
+  Project.load_all(YAML::load(File.open(file)))
+end
+
+
+
+
+##############################
+# Deployment
 #activate :fjords do |config|
   #config.username = ""
   #config.password = ""
@@ -23,17 +35,7 @@ end
 
 ##############################
 # Initalise
-
-# Markdown config
-module Haml::Filters::Markdown
-  include Haml::Filters::Base
-  lazy_require "redcarpet"
-
-  def render(text)
-    Redcarpet::Markdown.new(Redcarpet::Render::HTML).render(text)
-  end
-end
-
+  
 # Middleman Navigation
 activate :navigation
 

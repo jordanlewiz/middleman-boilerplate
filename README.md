@@ -30,3 +30,8 @@ For more help follow [Middleman's project template instructions](http://middlema
 ## Whats missing?
 - Finish Model examples
 - Documentation  
+
+[ ] Blog extention
+[ ] Bower
+[ ] CSS Grid
+[ ] SASS Structure

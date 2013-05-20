@@ -1,7 +1,6 @@
 source 'http://rubygems.org'
 
 gem "middleman", "~> 3.1.0.rc.1"
-#gem "middleman-fjords"
 gem "bourbon"
 gem 'builder'
 gem 'redcarpet'
@@ -11,3 +10,4 @@ gem "therubyracer", :require => 'v8'
 gem "middleman-livereload"
 gem "middleman-google-analytics"
 gem "middleman-navigation"
+#gem "middleman-fjords"
