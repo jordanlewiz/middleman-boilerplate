@@ -29,6 +29,43 @@ For more help follow [Middleman's project template instructions](http://middlema
 - Custom fonts
 
 
+## Package Manager
+1. `bower update` to update the assets in the `components/` directory to their latest versions.
+
+I wish we didn't have to include the `components/` directory since bower can just fetch all the data from the repos, but unfortunately `middleman init` does not work with creating symlinks that point to files that don't exist yet. Oh well.
+
+*Note: You can name the template whatever you like, so long as you call the same name in the `middleman init` command*
+
+
+##Adding a package with bower
+*This section just deals with adding bower packages to your middleman app.  The full bower documentation can be found [here](http://github.com/twitter/bower).*
+
+I have included a few bower packages already in the component.json file, namely jquery, normalize, and modernizr, and have left the default components directory in the template's root. I did this because otherwise Middleman's build phase would copy *Everything* from each bower package into the build/ directory.
+
+Also, middleman doesn't seem to support adding multiple asset paths at this time, so this is the easiest solution I could find for asset management without changing the source for [middleman-sprockets](http://github.com/middleman/middleman-sprockets).
+
+In order to add a package, simply install the package with bower and symlink the files you want to use to the `source/assets/{css,js,img}/vendor` directory.
+
+###Example
+if I want to install jQuery, what I do is (from the project root):
+
+    bower install jquery
+    cd source/assets/js/vendor
+    ln -s ../../../../components/jquery/jquery.min.js jquery.js
+
+and include it wherever you like.
+
+This tripped me up for a bit so I thought I'd say this:
+If you wish to have a file concatenated into the main app.js or all.css, Sprockets requires you to prepend an underscore to the file, so it doesn't copy over the file *as well as* concatenate the contents.
+
+If you do this for javascript, make sure to add the underscore again when you require the file, like so:
+
+    //= require vendor/_jquery
+
+
+
+
+
 ## Whats missing?
 [ ] Finish Model examples
 [ ] Documentation  
