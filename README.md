@@ -15,23 +15,39 @@ Download and install into ~/.middleman (you'll have to create this directory if 
 For more help follow [Middleman's project template instructions](http://middlemanapp.com/getting-started/).
 
 ## Features
-- Middleman 3.0.6  
-- Middleman LiveReload
-- [Twitter Bootstrap](http://twitter.github.com/bootstrap/) 2.1.1  
+- Middleman 3.1 RC1
 - [HTML5 Boilerplate](https://github.com/h5bp/html5-boilerplate)   
 - [HAML](http://haml.info/)  
 - [SASS](http://sass-lang.com/)  
-- [Bourbon](http://thoughtbot.com/bourbon/) SASS mixins  
-- Markdown support
-- and more 
+- [Bourbon](http://thoughtbot.com/bourbon/) SASS CSS3 mixins  
 
+- Middleman LiveReload
+- Middleman Navigation
+- Middleman Fjords
+- Middleman Google Analytics
+
+- Custom fonts
 
 
 ## Whats missing?
-- Finish Model examples
-- Documentation  
-
-[ ] Blog extention
-[ ] Bower
+[ ] Finish Model examples
+[ ] Documentation  
+[ ] Middleman Blog (https://github.com/virtusweb/middleman-sample)
+[ ] Bower (Asset manager)
 [ ] CSS Grid
 [ ] SASS Structure
+[ ] Coffeescript default JS
+[ ] Javascript testing (https://github.com/joefiorini/middleman-cucumber)
+[ ] Default template skin
+[ ] Mobile first
+[ ] Breakpoint
+[ ] Enable Gzip
+[ ] Fix frontmatter for custom Title + Description
+[ ] Add normalise css
+[ ] Update HTML5 Boilerplate
+[ ] Add selectivizr (CSS3 selectors for IE)
+[ ] CSS Styleguide
+[ ] FAQs (https://github.com/coderoshi/middleman-faqml)
+[ ] SMACCS
+[ ] User-agent sniffer
+[ ] Search (http://designbyjoel.com/blog/2012-11-23-middleman-search/)

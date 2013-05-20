@@ -11,8 +11,6 @@ Dir[File.join(File.dirname(__FILE__), 'data/projects', '*.yml')].each do |file|
 end
 
 
-
-
 ##############################
 # Deployment
 #activate :fjords do |config|
@@ -45,10 +43,6 @@ activate :livereload
 # Automatic image dimensions on image_tag helper
 activate :automatic_image_sizes
 
-# Activate google-analytics extension
-activate :google_analytics do |ga|
-  ga.tracking_id = 'UA-XXXXXXX-X'
-end
 
 ##############################
 # Pages
