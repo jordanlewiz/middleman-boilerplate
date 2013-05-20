@@ -3,11 +3,11 @@
 Dir[File.join(File.dirname(__FILE__), 'models', '*.rb')].each{ |file| require file }
 #Navigation.load_all(data.navigation)
 
-activate :fjords do |config|
+#activate :fjords do |config|
   #config.username = ""
   #config.password = ""
   #config.domain = "site.example.com"
-end
+#end
 
 
 ##############################
@@ -34,12 +34,19 @@ module Haml::Filters::Markdown
   end
 end
 
+# Middleman Navigation
+activate :navigation
+
 # Livereload
 activate :livereload
 
 # Automatic image dimensions on image_tag helper
 activate :automatic_image_sizes
 
+# Activate google-analytics extension
+activate :google_analytics do |ga|
+  ga.tracking_id = 'UA-XXXXXXX-X'
+end
 
 ##############################
 # Pages
@@ -66,6 +73,15 @@ set :js_dir, 'javascripts'
 set :images_dir, 'images'
 
 
+
+# Development-specific configuration
+configure :development do
+  activate :google_analytics do |ga|
+    ga.tracking_id = false
+  end
+end
+
+
 # Build-specific configuration
 configure :build do
 
@@ -82,6 +98,11 @@ configure :build do
   
   # Enable cache buster
   activate :cache_buster
+
+  # Activate google-analytics extension
+  activate :google_analytics do |ga|
+    ga.tracking_id = 'UA-XXXXXXX-X'
+  end
   
   # Use relative URLs
   # activate :relative_assets
