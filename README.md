@@ -30,24 +30,24 @@ For more help follow [Middleman's project template instructions](http://middlema
 
 
 ## Whats missing?
-[ ] Finish Model examples
-[ ] Documentation  
-[ ] Middleman Blog (https://github.com/virtusweb/middleman-sample)
-[ ] Bower (Asset manager)
-[ ] CSS Grid
-[ ] SASS Structure
-[ ] Coffeescript default JS
-[ ] Javascript testing (https://github.com/joefiorini/middleman-cucumber)
-[ ] Default template skin
-[ ] Mobile first
-[ ] Breakpoint
-[ ] Enable Gzip
-[ ] Fix frontmatter for custom Title + Description
-[ ] Add normalise css
-[ ] Update HTML5 Boilerplate
-[ ] Add selectivizr (CSS3 selectors for IE)
-[ ] CSS Styleguide
-[ ] FAQs (https://github.com/coderoshi/middleman-faqml)
-[ ] SMACCS
-[ ] User-agent sniffer
-[ ] Search (http://designbyjoel.com/blog/2012-11-23-middleman-search/)
+- Finish Model examples
+- Documentation
+- Middleman Blog (https://github.com/virtusweb/middleman-sample)
+- Bower (Asset manager)
+- CSS Grid
+- SASS Structure
+- Coffeescript default JS
+- Javascript testing (https://github.com/joefiorini/middleman-cucumber)
+- Default template skin
+- Mobile first
+- Breakpoint
+- Enable Gzip
+- Fix frontmatter for custom Title + Description
+- Add normalise css
+- Update HTML5 Boilerplate
+- Add selectivizr (CSS3 selectors for IE)
+- CSS Styleguide
+- FAQs (https://github.com/coderoshi/middleman-faqml)
+- SMACCS
+- User-agent sniffer
+- Search (http://designbyjoel.com/blog/2012-11-23-middleman-search/)
